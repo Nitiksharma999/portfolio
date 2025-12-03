@@ -1,147 +1,16 @@
-<!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<!doctype html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nitik Kumar Garg | AI Software Engineer</title>
-    <meta name="description" content="Portfolio of Nitik Kumar Garg, AI Software Engineer & Full Stack Developer." />
-    
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        darkMode: 'class',
-        theme: {
-          extend: {
-            fontFamily: {
-              sans: ['Outfit', 'sans-serif'],
-              mono: ['Space Grotesk', 'monospace'],
-            },
-            colors: {
-              background: '#030712', // Very dark slate
-              surface: '#0f172a',    // Dark slate
-              primary: '#6366f1',    // Indigo
-              secondary: '#ec4899',  // Pink
-              accent: '#06b6d4',     // Cyan
-            },
-            animation: {
-              'blob': 'blob 7s infinite',
-              'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
-            },
-            keyframes: {
-              blob: {
-                '0%': { transform: 'translate(0px, 0px) scale(1)' },
-                '33%': { transform: 'translate(30px, -50px) scale(1.1)' },
-                '66%': { transform: 'translate(-20px, 20px) scale(0.9)' },
-                '100%': { transform: 'translate(0px, 0px) scale(1)' },
-              }
-            }
-          }
-        }
-      }
-    </script>
-
-    <!-- Global Styles -->
-    <style>
-      :root {
-        --foreground-rgb: 255, 255, 255;
-        --background-start-rgb: 2, 6, 23;
-        --background-end-rgb: 15, 23, 42;
-      }
-
-      body {
-        background-color: #030712;
-        color: #f8fafc;
-        overflow-x: hidden;
-      }
-
-      /* Custom Scrollbar */
-      ::-webkit-scrollbar {
-        width: 10px;
-      }
-      ::-webkit-scrollbar-track {
-        background: #020617;
-      }
-      ::-webkit-scrollbar-thumb {
-        background: #334155;
-        border-radius: 5px;
-        border: 2px solid #020617;
-      }
-      ::-webkit-scrollbar-thumb:hover {
-        background: #475569;
-      }
-
-      /* Glass Effects */
-      .glass-nav {
-        background: rgba(3, 7, 18, 0.8);
-        backdrop-filter: blur(16px);
-        -webkit-backdrop-filter: blur(16px);
-        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-      }
-
-      .glass-card {
-        background: rgba(30, 41, 59, 0.3);
-        backdrop-filter: blur(12px);
-        -webkit-backdrop-filter: blur(12px);
-        border: 1px solid rgba(255, 255, 255, 0.05);
-        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-      }
-
-      /* Reveal Animation Utility */
-      .reveal-container {
-        opacity: 0;
-        transform: translateY(30px);
-        transition: all 0.8s cubic-bezier(0.5, 0, 0, 1);
-        will-change: opacity, transform;
-      }
-      
-      .reveal-container.active {
-        opacity: 1;
-        transform: translateY(0);
-      }
-
-      /* Cursor effect */
-      .typing-cursor::after {
-        content: '|';
-        display: inline-block;
-        animation: cursor-blink 1s step-end infinite;
-        color: #6366f1;
-      }
-
-      @keyframes cursor-blink {
-        0%, 100% { opacity: 1; }
-        50% { opacity: 0; }
-      }
-
-      /* Text Gradients */
-      .text-gradient {
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-image: linear-gradient(to right, #6366f1, #ec4899, #06b6d4);
-      }
-    </style>
-    <script type="importmap">
-{
-  "imports": {
-    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0",
-    "react-dom/client": "https://aistudiocdn.com/react-dom@^19.2.0/client",
-    "react-dom": "https://aistudiocdn.com/react-dom@^19.2.0",
-    "react": "https://aistudiocdn.com/react@^19.2.0",
-    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
-    "react/": "https://aistudiocdn.com/react@^19.2.0/"
-  }
-}
-</script>
-  <link rel="stylesheet" href="/index.css">
+    <title>Professional Portfolio Development</title>
+    <meta property="og:image" content="https://bolt.new/static/og_default.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://bolt.new/static/og_default.png">
 </head>
   <body>
     <div id="root"></div>
-  <script type="module" src="/index.tsx"></script>
-</body>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
